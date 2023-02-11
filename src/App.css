@@ -3,6 +3,7 @@
   font-family: "Karla", sans-serif;
   margin: 0;
   padding: 0;
+  font-weight: 400;
 }
 
 #root {
@@ -17,14 +18,13 @@
 .Container {
   background-color: #0f2434;
   width: 360px;
-  height: 380px;
-  padding-top: 5px;
+  height: 420px;
 }
 
 main {
   background-color: #f5f5f5;
   width: 320px;
-  height: 320px;
+  height: 360px;
   margin: 30px auto;
   border-radius: 10px;
   display: flex;
@@ -34,9 +34,37 @@ main {
   padding: 20px;
 }
 
+/* *** NAV *** */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  /* border: solid 1px black; */
+  width: 110%;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.trackers {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  margin-right: 10px;
+}
+
 /* *** TITLE *** */
 .title {
   font-size: 2rem;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
 /* *** INSTRUCTIONS *** */
@@ -74,10 +102,8 @@ main {
 
 /* *** BUTTON *** */
 .roll-btn {
-  width: 150px;
-  /* height: 40px; */
+  width: 180px;
   padding: 2px 5px;
-  background-color: #572dfd;
   color: #ffffff;
   box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
   border-radius: 5px;
